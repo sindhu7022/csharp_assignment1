@@ -1,0 +1,29 @@
+using System;
+using System.Collections.Generic;
+
+class Merge_array
+{
+   static void Main() 
+   {
+      int i = 0;
+      int j = 0;
+
+      int[] a1 = new int[3] {5,15,2};
+
+      int[] a2 = new int[4] { 8,6,10,23 };
+
+      int[] merge_array = new int[7];
+   
+      for (i = 0, j = 0; i < 4; i++) {
+         merge_array[j++] = a1[i];
+      }
+      for (i = 0; i < 5; i++) {
+         merge_array[j++] = a2[i];
+      }
+      Console.WriteLine("after merging and sorting array elements are: ");
+      for (i = 0; i < 7; i++) {
+         Console.WriteLine("merge_array[" + (i) + "]: " + merge_array[i]);
+      }
+      Console.WriteLine();
+   }
+}
